@@ -1,0 +1,196 @@
+/* Geral */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1c1c1c;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: top 0.3s ease;
+}
+
+/* Links do Navbar */
+#links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#heading, #heading a {
+  font-size: 36px;
+  color: #ff1e1e;
+  text-shadow: 2px 2px black;
+}
+
+#links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 26px;
+  transition: color 0.3s;
+}
+
+#links a:hover {
+  color: #ff1e1e;
+}
+
+/* Campo de busca */
+#search {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+/* Resultados de busca */
+#search-results {
+  padding: 20px 30px;
+}
+
+.search-result {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.search-result:hover {
+  background-color: #2a2a2a;
+  transform: scale(1.02);
+}
+
+.search-result img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.search-result .info {
+  padding: 10px 20px;
+  color: #fff;
+  font-family: 'Bangers', sans-serif;
+  font-size: 22px;
+  text-shadow: 1px 1px 4px black;
+}
+
+/* Conteúdo principal */
+#content {
+  padding: 100px 20px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#element-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.symbol {
+  font-size: 80px;
+  font-weight: bold;
+  color: #ff1e1e;
+}
+
+.name {
+  font-size: 22px;
+  color: #ccc;
+}
+
+/* Seções */
+.section-block {
+  background: #1e1e1e;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.4);
+}
+
+.section-block h2 {
+  text-align: center;
+  color: #ff1e1e;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.section-block p {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  color: #e6e6e6;
+}
+
+.info-linha {
+  position: relative; /* necessário para posicionamento absoluto da barra */
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  background-color: #2a2a2a;
+  border-radius: 6px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.info-linha:hover{
+  box-shadow: 0 0 0 2px rgba(58, 148, 233, 0.6);
+
+}
+
+/* Barra vertical no meio */
+.info-linha::after {
+  content: "";
+  position: absolute;
+  top: 15%;      /* ajusta para não encostar muito nas bordas */
+  bottom: 15%;
+  left: 50%;     /* centro horizontal da linha */
+  transform: translateX(-50%);
+  width: 2px;
+  background-color: #ff1e1e;
+  border-radius: 1px;
+  z-index: 10;
+}
+
+/* Ajustes para os <p> */
+.info-linha p {
+  margin: 0;
+  color: #e0e0e0;
+  font-size: 16px;
+  flex: 1;
+  font-family: Arial, sans-serif;
+  word-break: break-word;
+  padding: 0 10px; /* pra dar espaço da barra */
+}
+
+/* Para garantir que os textos não encostem na barra */
+.info-linha p:first-child {
+  text-align: center;
+
+}
+
+.info-linha p:last-child {
+  text-align: center;
+
+}

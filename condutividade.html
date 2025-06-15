@@ -1,0 +1,232 @@
+<!DOCTYPE html> <!-- Declara o tipo de documento como HTML5 -->
+<html lang="en"> <!-- Define o idioma do documento como inglês -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade para dispositivos móveis -->
+
+    <link rel="stylesheet" href="condutividade.css"> <!-- Importa um arquivo CSS externo para estilização -->
+
+    <title>Tabela periodica </title> <!-- Título da aba do navegador -->
+</head>
+<body>
+
+    <div id="navbar">
+        <div id="links">
+            <h1 id="heading"> Tabela periodica </h1>
+            <a href="../tabela/tabela.html"> tabela </a>
+            <a href="../infos/infos.html"> infos </a>
+            <a href="../temperatura/temperatura.html"> temperatura </a>  
+            <a href="../quimica/quimica.html"> quimica </a>  
+            <a href="../estrutura/estrutura.html"> estrutura </a>  
+            <a href="../eletrons/eletrons.html"> eletrons </a> 
+            <a href="condutividade.html"> condutividade </a>
+            <a href="../composto/composto.css"> composto </a>    
+        </div>
+        <input id="search" type="text" placeholder="Pesquisar...">
+    </div>
+
+    <div id="search-results"></div>
+        <div id="Quadrado"></div> <!-- Provavelmente usado para mostrar um quadrado representativo ou destaque -->
+        <div id="Informação"></div> <!-- Usado para exibir informações de um elemento ao clicar -->
+
+        <div class="tabela"> <!-- Contêiner principal da tabela periódica -->
+            <table> <!-- Início da tabela -->
+                <tr> <!-- Primeira linha com os números das colunas (grupos da tabela) -->
+                    <th id="Nada"> </th> <!-- Espaço vazio no canto superior esquerdo -->
+                    <th id="Nada">1</th> <!-- Cabeçalhos de grupo da tabela periódica -->
+                    <th id="Nada">2</th>
+                    <th id="Nada">3</th>
+                    <th id="Nada">4</th>
+                    <th id="Nada">5</th>
+                    <th id="Nada">6</th>
+                    <th id="Nada">7</th>
+                    <th id="Nada">8</th>
+                    <th id="Nada">9</th>
+                    <th id="Nada">10</th>
+                    <th id="Nada">11</th>
+                    <th id="Nada">12</th>
+                    <th id="Nada">13</th>
+                    <th id="Nada">14</th>
+                    <th id="Nada">15</th>
+                    <th id="Nada">16</th>
+                    <th id="Nada">17</th>
+                    <th id="Nada">18</th>
+                </tr>
+
+                <!-- A partir daqui começam as linhas com os elementos da tabela periódica -->
+
+                <tr> <!-- Linha do Período 1 -->
+                    <th id="Nada">1</th> <!-- Número do período (linha) -->
+                    <td id="Não-metais" onclick="mostra_info('1')"> H <sup>1</sup> <br> <p>Hidrogênio</p> </td> <!-- Elemento Hidrogênio -->
+                    <td colspan="16" id="Nada" ></td> <!-- Espaços vazios -->
+                    <td id="Gases-nobre" onclick="mostra_info('2')"> He <sup> 2</sup> <br> <p>Hélio</p> </td> <!-- Elemento Hélio -->
+                </tr>
+
+                <tr> <!-- Linha do Período 2 -->
+                    <th id="Nada">2</th>
+                    <td id="Metais-alcalinos" onclick="mostra_info('3')">Li<sup>3</sup> <br> <p>Lítio</p></td>
+                    <td id="Metais-alcalinos-terrosos" onclick="mostra_info('4')">Be<sup>4</sup> <br> <p>Berílio</p></td>
+                    <td colspan="10" id="Nada" ></td>
+                    <td id="Semi-metais" onclick="mostra_info('5')">B<sup>5</sup> <br> <p>Boro</p> </td>
+                    <td id="Não-metais" onclick="mostra_info('6')">C<sup>6</sup> <br> <p>Carbono</p></td>
+                    <td id="Não-metais" onclick="mostra_info('7')">N<sup>7</sup> <br> <p>Nitrogênio</p></td>
+                    <td id="Não-metais" onclick="mostra_info('8')">O<sup>8</sup> <br> <p>Oxigênio</p></td>
+                    <td id="Halogênios" onclick="mostra_info('9')">F<sup>9</sup> <br> <p>Flúor</p></td>
+                    <td id="Gases-nobre" onclick="mostra_info('10')">Ne<sup>10</sup> <br> <p>Neônio</p></td>
+                </tr>
+
+                    <tr>
+                        <th id="Nada">3</th>
+                            <td id="Metais-alcalinos" onclick="mostra_info('11')">Na<sup>11</sup> <br> <p>Sódio</p></td>
+                            <td id="Metais-alcalinos-terrosos" onclick="mostra_info('12')">Mg<sup>12</sup> <br> <p>Magnésio</p></td>
+                        <td colspan="10" id="Nada"></td>
+                            <td id="Outros-metais" onclick="mostra_info('13')">Al<sup>13</sup> <br> <p>Alumínio</p></td>
+                            <td id="Semi-metais" onclick="mostra_info('14')">Si<sup>14</sup> <br> <p>Silício</p></td>
+                            <td id="Não-metais" onclick="mostra_info('15')">P<sup>15</sup> <br> <p>Fósforo</p></td>
+                            <td id="Não-metais" onclick="mostra_info('16')">S<sup>16</sup> <br> <p>Enxofre</p></td>  
+                            <td id="Halogênios" onclick="mostra_info('17')">Cl<sup>17</sup> <br> <p>Cloro</p></td>
+                            <td id="Gases-nobre" onclick="mostra_info('18')">Ar<sup>18</sup> <br> <p>Argônio</p></td>
+                    </tr>
+
+                    <tr>
+                        <th id="Nada">4</th>
+                            <td id="Metais-alcalinos" onclick="mostra_info('19')">K<sup>19</sup> <br> <p>Potássio</p></td>
+                            <td id="Metais-alcalinos-terrosos" onclick="mostra_info('20')">Ca<sup>20</sup> <br> <p>Cálcio</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('21')">Sc<sup>21</sup> <br> <p>Escândio</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('22')">Ti<sup>22</sup> <br> <p>Titânio</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('23')">V<sup>23</sup> <br> <p>Vanádio</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('24')">Cr<sup>24</sup> <br> <p>Cromo</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('25')">Mn<sup>25</sup> <br> <p>Manganês</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('26')">Fe<sup>26</sup> <br> <p>Ferro</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('27')">Co<sup>27</sup> <br> <p>Cobalto</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('28')">Ni<sup>28</sup> <br> <p>Níquel</p> </td>
+                            <td id="Metais-de-transição" onclick="mostra_info('29')">Cu<sup>29</sup> <br> <p>Cobre</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('30')">Zn<sup>30</sup> <br> <p>Zinco</p></td>
+                            <td id="Outros-metais" onclick="mostra_info('31')">Ga<sup>31</sup> <br> <p>Gálio</p> </td>
+                            <td id="Semi-metais" onclick="mostra_info('32')">Ge<sup>32</span> <br> <p>Germânio</p></td>
+                            <td id="Semi-metais" onclick="mostra_info('33')">As<sup>33</sup><br> <p>Arsênio</p> </td>
+                            <td id="Não-metais" onclick="mostra_info('34')">Se<sup>34</sup><br> <p>Selênio</p> </td>
+                            <td id="Halogênios" onclick="mostra_info('35')">Br<sup>35</sup><br> <p>Bromo</p></td>
+                            <td id="Gases-nobre" onclick="mostra_info('36')">Kr<sup>36</sup> <br> <p>Criptônio</p></td>
+                    </tr>
+
+                    <tr>
+                        <th id="Nada">5</th>
+                            <td id="Metais-alcalinos" onclick="mostra_info('37')">Rb<sup>37</sup> <br> <p>Rubídio</p></td>
+                            <td id="Metais-alcalinos-terrosos" onclick="mostra_info('38')">Sr<sup>38</sup> <br> <p>Estrôncio</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('39')">Y<sup>39</sup> <br> <p>Ítrio</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('40')">Zr<sup>40</sup> <br> <p>Zircônio</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('41')">Nb<sup>41</sup> <br> <p>Nióbio</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('42')">Mo<sup>42</sup> <br> <p>Molibdênio</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('43')">Tc<sup>43</sup><br> <p>Tecnécio</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('44')">Ru<sup>44</sup><br> <p>Rutênio</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('45')">Rh<sup>45</sup><br> <p>Ródio</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('46')">Pd<sup>46</sup><br> <p>Paládio</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('47')">Ag<sup>47</sup><br> <p>Prata</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('48')">Cd<sup>48</sup><br> <p>Cádmio</p></td>
+                            <td id="Outros-metais" onclick="mostra_info('49')">In<sup>49</sup><br> <p>Índio</p></td>
+                            <td id="Outros-metais" onclick="mostra_info('50')">Sn<sup>50</sup><br> <p>Estanho</p></td>
+                            <td id="Semi-metais" onclick="mostra_info('51')">Sb<sup>51</sup><br> <p>Antimônio</p></td>
+                            <td id="Semi-metais" onclick="mostra_info('52')">Te<sup>52</sup><br> <p>Telúrio</p></td>
+                            <td id="Halogênios" onclick="mostra_info('53')">I<sup>53</sup><br> <p>Iodo</p></td>
+                            <td id="Gases-nobre" onclick="mostra_info('54')">Xe<sup>54</sup><br> <p>Xenônio</p></td>
+                    </tr>
+
+                    <tr>
+                        <th id="Nada">6</th>
+                            <td id="Metais-alcalinos" onclick="mostra_info('55')">Cs<sup>55</sup><br> <p>Césio</p></td>
+                            <td id="Metais-alcalinos-terrosos" onclick="mostra_info('56')">Ba<sup>56</sup><br> <p>Bário</p></td>
+                        <td colspan="1" id="Nada"></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('72')">Hf<sup>72</sup><br> <p>Háfnio</p></td>        
+                            <td id="Metais-de-transição" onclick="mostra_info('73')">Ta<sup>73</sup><br> <p>Tântalo</p></td>      
+                            <td id="Metais-de-transição" onclick="mostra_info('74')">W<sup>74</sup><br> <p>Tungstênio</p></td>    
+                            <td id="Metais-de-transição" onclick="mostra_info('75')">Re<sup>75</sup><br> <p>Rênio</p></td>        
+                            <td id="Metais-de-transição" onclick="mostra_info('76')">Os<sup>76</sup><br> <p>Ósmio</p></td>        
+                            <td id="Metais-de-transição" onclick="mostra_info('77')">Ir<sup>77</sup><br> <p>Irídio</p></td>       
+                            <td id="Metais-de-transição" onclick="mostra_info('78')">Pt<sup>78</sup><br> <p>Platina</p></td>      
+                            <td id="Metais-de-transição" onclick="mostra_info('79')">Au<sup>79</sup><br> <p>Ouro</p></td>         
+                            <td id="Metais-de-transição" onclick="mostra_info('80')">Hg<sup>80</sup><br> <p>Mercúrio</p></td>     
+                            <td id="Outros-metais" onclick="mostra_info('81')">Tl<sup>81</sup><br> <p>Tálio</p></td>              
+                            <td id="Outros-metais" onclick="mostra_info('82')">Pb<sup>82</sup><br> <p>Chumbo</p></td>             
+                            <td id="Outros-metais" onclick="mostra_info('83')">Bi<sup>83</sup><br> <p>Bismuto</p></td>            
+                            <td id="Semi-metais" onclick="mostra_info('84')">Po<sup>84</sup><br> <p>Polônio</p></td>              
+                            <td id="Halogênios" onclick="mostra_info('85')">At<sup>85</sup><br> <p>Astato</p></td>               
+                            <td id="Gases-nobre" onclick="mostra_info('86')">Rn<sup>86</sup><br> <p>Radônio</p></td>           
+                    </tr>
+
+                    <tr>
+                        <th id="Nada">7</th>
+                            <td id="Metais-alcalinos" onclick="mostra_info('87')">Fr<sup>87</sup><br> <p>Frâncio</p></td>         
+                            <td id="Metais-alcalinos-terrosos" onclick="mostra_info('88')">Ra<sup>88</sup><br> <p>Rádio</p></td>  
+                        <td colspan="1" id="Nada"></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('104')">Rf<sup>104</sup><br> <p>Rutherfórdio</p></td>
+                            <td id="Metais-de-transição" onclick="mostra_info('105')">Db<sup>105</sup><br> <p>Dúbnio</p></td>      
+                            <td id="Metais-de-transição" onclick="mostra_info('106')">Sg<sup>106</sup><br> <p>Seabórgio</p></td>   
+                            <td id="Metais-de-transição" onclick="mostra_info('107')">Bh<sup>107</sup><br> <p>Bóhrio</p></td>      
+                            <td id="Metais-de-transição" onclick="mostra_info('108')">Hs<sup>108</sup><br> <p>Hássio</p></td>      
+                            <td id="Metais-de-transição" onclick="mostra_info('109')">Mt<sup>109</sup><br> <p>Meitnério</p></td>   
+                            <td id="Metais-de-transição" onclick="mostra_info('110')">Ds<sup>110</sup><br> <p>Darmstádio</p></td>  
+                            <td id="Metais-de-transição" onclick="mostra_info('111')">Rg<sup>111</sup><br> <p>Roentgênio</p></td>  
+                            <td id="Metais-de-transição" onclick="mostra_info('112')">Cn<sup>112</sup><br> <p>Copernício</p></td>  
+                            <td id="Outros-metais" onclick="mostra_info('113')">Nh<sup>113</sup><br> <p>Nihônio</p></td>          
+                            <td id="Outros-metais" onclick="mostra_info('114')">Fl<sup>114</sup><br> <p>Fleróvio</p></td>         
+                            <td id="Outros-metais" onclick="mostra_info('115')">Mc<sup>115</sup><br> <p>Moscóvio</p></td>         
+                            <td id="Outros-metais" onclick="mostra_info('116')">Lv<sup>116</sup><br> <p>Livermório</p></td>       
+                            <td id="Halogênios" onclick="mostra_info('117')">Ts<sup>117</sup><br> <p>Tenessino</p></td>           
+                            <td id="Gases-nobre" onclick="mostra_info('118')">Og<sup>118</sup><br> <p>Oganessônio</p></td>        
+                    </tr>
+
+                    <tr>
+                        <th id="Nada"></th>
+                    </tr>
+
+                    
+
+
+                    <tr>
+                        <th id="Nada">8</th>
+                        <td colspan="3" id="Nada"></td>
+                            <td id="Lantanideos" onclick="mostra_info('57')">La<sup>57</sup><br> <p>Lantânio</p></td>        
+                            <td id="Lantanideos" onclick="mostra_info('58')">Ce<sup>58</sup><br> <p>Cério</p></td>         
+                            <td id="Lantanideos" onclick="mostra_info('59')">Pr<sup>59</sup><br> <p>Praseodímio</p></td>   
+                            <td id="Lantanideos" onclick="mostra_info('60')">Nd<sup>60</sup><br> <p>Neodímio</p></td>      
+                            <td id="Lantanideos" onclick="mostra_info('61')">Pm<sup>61</sup><br> <p>Promécio</p></td>      
+                            <td id="Lantanideos" onclick="mostra_info('62')">Sm<sup>62</sup><br> <p>Samário</p></td>       
+                            <td id="Lantanideos" onclick="mostra_info('63')">Eu<sup>63</sup><br> <p>Európio</p></td>       
+                            <td id="Lantanideos" onclick="mostra_info('64')">Gd<sup>64</sup><br> <p>Gadolínio</p></td>    
+                            <td id="Lantanideos" onclick="mostra_info('65')">Tb<sup>65</sup><br> <p>Térbio</p></td>        
+                            <td id="Lantanideos" onclick="mostra_info('66')">Dy<sup>66</sup><br> <p>Disprósio</p></td>     
+                            <td id="Lantanideos" onclick="mostra_info('67')">Ho<sup>67</sup><br> <p>Hólmio</p></td>        
+                            <td id="Lantanideos" onclick="mostra_info('68')">Er<sup>68</sup><br> <p>Érbio</p></td>         
+                            <td id="Lantanideos" onclick="mostra_info('69')">Tm<sup>69</sup><br> <p>Túlio</p></td>         
+                            <td id="Lantanideos" onclick="mostra_info('70')">Yb<sup>70</sup><br> <p>Itérbio</p></td>       
+                            <td id="Lantanideos" onclick="mostra_info('71')">Lu<sup>71</sup><br> <p>Lutécio</p></td>       
+                    </tr>
+
+                    <tr>
+                        <th id="Nada">9</th>
+                        <td colspan="3" id="Nada"></td>
+                            <td id="Actinidios" onclick="mostra_info('89')">Ac<sup>89</sup><br> <p>Actínio</p></td>       
+                            <td id="Actinidios" onclick="mostra_info('90')">Th<sup>90</sup><br> <p>Tório</p></td>          
+                            <td id="Actinidios" onclick="mostra_info('91')">Pa<sup>91</sup><br> <p>Protactínio</p></td>    
+                            <td id="Actinidios" onclick="mostra_info('92')">U<sup>92</sup><br> <p>Urânio</p></td>          
+                            <td id="Actinidios" onclick="mostra_info('93')">Np<sup>93</sup><br> <p>Neptúnio</p></td>       
+                            <td id="Actinidios" onclick="mostra_info('94')">Pu<sup>94</sup><br> <p>Plutônio</p></td>       
+                            <td id="Actinidios" onclick="mostra_info('95')">Am<sup>95</sup><br> <p>Amerício</p></td>       
+                            <td id="Actinidios" onclick="mostra_info('96')">Cm<sup>96</sup><br> <p>Cúrio</p></td>          
+                            <td id="Actinidios" onclick="mostra_info('97')">Bk<sup>97</sup><br> <p>Berquélio</p></td>      
+                            <td id="Actinidios" onclick="mostra_info('98')">Cf<sup>98</sup><br> <p>Califórnio</p></td>     
+                            <td id="Actinidios" onclick="mostra_info('99')">Es<sup>99</sup><br> <p>Einstênio</p></td>      
+                            <td id="Actinidios" onclick="mostra_info('100')">Fm<sup>100</sup><br> <p>Férmio</p></td>       
+                            <td id="Actinidios" onclick="mostra_info('101')">Md<sup>101</sup><br> <p>Mendelévio</p></td>   
+                            <td id="Actinidios" onclick="mostra_info('102')">No<sup>102</sup><br> <p>Nobélio</p></td>       
+                            <td id="Actinidios" onclick="mostra_info('103')">Lr<sup>103</sup><br> <p>Laurêncio</p></td>    
+                    </tr>
+
+                </table>
+            </div>
+     <script src="../infos/infos_infos.js"></script>
+    <script src="condutividade_info.js"></script> 
+    <script src="condutividade.js"></script> 
+</body>
+</html>

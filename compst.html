@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+  <tr>
+    <td id="1" onclick="mostra_info(1)">H</td>
+    <td id="8" onclick="mostra_info(8)">O</td>
+    <td id="6" onclick="mostra_info(6)">C</td>
+    <td id="11" onclick="mostra_info(11)">Na</td>
+    <td id="17" onclick="mostra_info(17)">Cl</td>
+  </tr>
+</table>
+
+<p><strong>Selecionados:</strong> <span id="selecionados"></span></p>
+<p><strong>Misturas encontradas:</strong> <span id="misturas"></span></p>
+<p id="resultadoMistura"></p>
+
+<button onclick="limpa_elementos()">Limpar</button>
+
+<script src="composto.js"></script>
+</body>
+</html>

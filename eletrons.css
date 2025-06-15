@@ -1,0 +1,307 @@
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1c1c1c;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: fixed; 
+    width: 100%;
+}
+
+#navbar {
+    transition: top 0.3s ease;
+}
+
+/* Links do Navbar */
+#links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: 'Bangers', sans-serif;
+}
+
+#heading a {
+    font-size: 36px;
+    color: #ff1e1e;
+    text-shadow: 2px 2px black;
+}
+
+#heading {
+    font-size: 36px;
+    color: #ff1e1e;
+    text-shadow: 2px 2px black;
+}
+
+
+
+#links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 26px;
+    transition: color 0.3s;
+}
+
+#links a:hover {
+    color: #ff1e1e;
+}
+
+/* Campo de busca */
+#search {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2a2a2a;
+    color: white;
+}
+
+#search-results {
+    padding: 20px 30px;
+}
+
+.search-result {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.search-result:hover {
+    background-color: #2a2a2a;
+    transform: scale(1.02);
+}
+
+.search-result img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.search-result .info {
+    padding: 10px 20px;
+    color: #fff;
+    font-family: 'Bangers', sans-serif;
+    font-size: 22px;
+    text-shadow: 1px 1px 4px black;
+}
+td {
+    cursor: pointer;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Efeito de borda ao passar o mouse (pra fora) */
+td:hover {
+    box-shadow: 0 0 0 3px rgba(58, 148, 233, 0.6); /* borda externa clara */
+}
+
+/* Borda permanente quando clicado */
+td.selected {
+    box-shadow: 0 0 0 4px #ffcc00; /* borda externa amarela */
+}
+
+#info_topico:hover {
+    box-shadow: 0 0 0 2px rgba(58, 148, 233, 0.6); /* borda externa clara */
+}
+
+
+/* Define o layout do corpo da página utilizando flexbox para organizar os elementos em linha */
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Espaço uniforme entre os elementos */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    margin: 20px;
+    background-color: #ffffff;
+}
+
+/* Estiliza a tabela */
+table {
+    width: 400px; /* Garante que a tabela ocupe toda a largura disponível */
+    table-layout: fixed; /* Define um layout de tabela fixo */
+    border: 5px groove; /* Borda com estilo 'groove' */
+    background-color: rgb(53, 51, 51); /* Cor de fundo escura */
+    margin-top: 140px;
+    border-spacing: 5px; /* Espaçamento entre as células */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombreamento leve */
+}
+
+/* Estiliza as células da tabela */
+td, th {
+    width: 50px; /* Largura fixa para todas as células */
+    height: 50px; /* Altura fixa para todas as células */
+    padding: 0; /* Remove o preenchimento interno */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho */
+    text-align: left; /* Alinha o texto à esquerda */
+    vertical-align: middle; /* Alinha o conteúdo verticalmente ao centro */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassar o tamanho da célula */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    text-overflow: ellipsis; /* Adiciona reticências ao texto que ultrapassar o tamanho da célula */
+    transition: border 0.3s ease; /* Transição suave para mudanças de borda */
+    cursor: pointer; /* Altera o cursor para indicar que a célula é interativa */
+    position: relative;
+}
+
+/* Efeito de borda ao passar o mouse (exceto na célula com id 'Nada') */
+td:hover:not(#Nada) {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.6); /* Borda externa clara */
+}
+
+/* Borda permanente quando a célula é selecionada (exceto na célula com id 'Nada') */
+td.selected:not(#Nada) {
+    box-shadow: 0 0 0 2px #ffcc00; /* Borda externa amarela */
+}
+
+/* Remove qualquer sombra da célula com id 'Nada' */
+td#Nada,
+td#Nada:hover,
+td#Nada.selected {
+    box-shadow: none !important;
+}
+
+/* Estiliza o contêiner de informações */
+#Informação {
+    width: 250px;
+    height: 280px;
+    padding: 20px;
+    margin-top: 200px;
+}
+
+/* Estiliza o quadrado fixo */
+#Quadrado {
+    border: 1px solid black;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin-left: 70px;
+    position: fixed;
+    margin-top: 140px;
+}
+
+#quadradodiv {
+    font-size: 40px;
+    height: 100px;
+}
+
+/* Estiliza o tópico de informação */
+#info_topico {
+    white-space: nowrap; /* Mantém o texto em uma única linha */
+    overflow-y: hidden; /* Evita rolagem vertical */
+    overflow-x: auto; /* Adiciona barra de rolagem horizontal se necessário */
+    width: 300px; /* Largura fixa */
+    height: 40px;
+    border: 1px solid #ccc; /* Borda para visualização */
+    padding: 5px;
+    background-color: #f9f9f9; /* Cor de fundo */
+    flex: 1; /* Ocupa todo o espaço disponível */
+    margin-bottom: 1px;
+    max-height: 300px;           /* Define uma altura máxima com rolagem */
+}
+
+/* Estiliza o p do tópico de informação */
+#info_topico p {
+    font-size: 16px;
+    text-align: left;
+}
+
+#info_topico h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+#info_container {
+    position: fixed;       /* Alterado de relative para fixed */
+    top: 300px;             /* Distância do topo da tela */
+    left: 80px;             /* Gruda na lateral esquerda */
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    background-color: #f4f4f4;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    margin-top: 140px;
+}
+
+/* Contêiner da tabela */
+.tabela-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Foco nas células da tabela */
+td:focus {
+    border: 5px solid #000;
+    outline: none;
+}
+
+/* Parágrafos dentro das células da tabela */
+td p {
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* Estiliza os parágrafos gerais */
+p {
+    font-size: 10px;
+}
+
+/* Define cores de fundo para diferentes tipos de células */
+#Nada {
+    background: transparent; /* fundo transparente */
+    border-style: none;
+}
+
+#Metais-de-transição {
+    background-color: #ee0f0f;
+}
+
+#Metais-alcalinos {
+    background-color: #ff9b04;
+}
+
+#Metais-alcalinos-terrosos {
+    background-color: #eeff04;
+}
+
+#Não-metais {
+    background-color: #47ff04;
+}
+
+#Lantanideos {
+    background-color: #ff04ff;
+}
+
+#Actinidios {
+    background-color: #8204ff;
+}
+
+#Halogênios {
+    background-color: #16dcdc;
+}
+
+#Semi-metais {
+    background-color: #0cb10c;
+}
+
+#Gases-nobre {
+    background-color: #1054f5;
+}
+
+#Outros-metais {
+    background-color: #4d505a;
+}
